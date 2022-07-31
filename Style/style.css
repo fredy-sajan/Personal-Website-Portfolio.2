@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Noto-serif-bold;
+  src: url(/Portfolio/font/noto-serif/NotoSerif-Bold.ttf);
+}
+@font-face {
+  font-family: Noto-serif-semibold;
+  src: url(/Portfolio/font/noto-serif/NotoSerif-SemiBold.ttf);
+}
+@font-face {
+  font-family: Noto-serif-medium;
+  src: url(/Portfolio/font/noto-serif/NotoSerif-Medium.ttf);
+}
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Noto-serif-medium;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 88px;
+  background-color: #21273D;
+  padding: 0 28px;
+}
+header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  top: 25%;
+  position: relative;
+}
+header .wrapper .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .wrapper .logo img {
+  width: 52px;
+  height: 44px;
+}
+header .wrapper .logo h2#logo-text {
+  font-size: 1.4375rem;
+  color: #F1F6F8;
+}
+header .wrapper .menu-icon-div .menu-icon {
+  transform: translateY(50%);
+}
+header .wrapper nav {
+  width: 9.375rem;
+  height: 100vh;
+  background-color: #2E344A;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+}
+header .wrapper nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding: 3.75rem 1.25rem;
+}
+header .wrapper nav ul li {
+  color: #F1F6F8;
+  background-color: #404B72;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.1875rem;
+}
+header .wrapper nav ul li:hover {
+  background-color: #21273D;
+  border-bottom: 0.0625rem solid #839AED;
+}
+header .wrapper nav .close .close-icon {
+  float: right;
+  margin-right: 1.5rem;
+  margin-top: 0.9375rem;
+}
+
+#hero #home {
+  background-color: #404B72;
+}
+#hero #home .wrapper {
+  padding: 0 1.75rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 193px auto;
+  grid-template-areas: "profile-picture" "home-info";
+  padding-top: 1.875rem;
+}
+#hero #home .wrapper .home-info {
+  grid-area: home-info;
+  margin-top: 0px;
+}
+#hero #home .wrapper .home-info .info-head {
+  color: #F1F6F8;
+  display: inline-block;
+  padding: 0 5px 5px 0;
+  border-bottom: 1px solid #839AED;
+  margin: 35px 0 0;
+}
+#hero #home .wrapper .home-info .info-head h1 {
+  font-family: Noto-serif-bold;
+  font-size: 2.125rem;
+}
+#hero #home .wrapper .home-info .home-info-paragraph {
+  margin-top: 35px;
+}
+#hero #home .wrapper .home-info .home-info-paragraph p {
+  font-family: noto-serif-semibold;
+  font-size: 1.325rem;
+  line-height: 1.8;
+  color: #F1F6F8;
+}
+#hero #home .wrapper .home-info .home-info-btn {
+  margin: 35px 0 56px;
+  float: right;
+  width: 123px;
+  height: 45px;
+  background: linear-gradient(0deg, #262E4B, #262E4B), #404B72;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+#hero #home .wrapper .home-info .home-info-btn a {
+  text-decoration: none;
+  color: #F1F6F8;
+  font-size: 1.125rem;
+  font-family: Noto-serif-semibold;
+}
+#hero #home .wrapper aside .profile-picture {
+  grid-area: profile-picture;
+  margin-top: 0px;
+}
+#hero #home .wrapper aside .profile-picture img {
+  width: 100%;
+  height: 193px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 30%;
+     object-position: 30%;
+}
+#hero #About {
+  padding: 65px 0 65px;
+  position: relative;
+  background-color: #B9D4F1;
+  overflow: hidden;
+}
+#hero #About .side-box {
+  width: 107px;
+  height: 1989px;
+  background-color: #21273D;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+#hero #About .wrapper {
+  padding: 0 1.75rem;
+  position: relative;
+}
+#hero #About .wrapper .about-image {
+  width: 15.1875rem;
+  height: 15.4375rem;
+}
+#hero #About .wrapper .about-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#hero #About .wrapper aside {
+  background-color: #404B72;
+  padding: 151px 27px 62px 16px;
+  margin-top: -115px;
+}
+#hero #About .wrapper aside .about-info-head {
+  display: inline-block;
+}
+#hero #About .wrapper aside .about-info-head h1 {
+  font-family: Noto-serif-bold;
+  font-size: 2rem;
+  margin-top: -15px;
+  border-bottom: 1px solid #839AED;
+  color: #F1F6F8;
+  padding: 0 5px 5px 0;
+}
+#hero #About .wrapper aside .about-info-paragraph {
+  margin-top: 20px;
+}
+#hero #About .wrapper aside .about-info-paragraph p {
+  font-family: Noto-serif-medium;
+  font-size: 1.0625rem;
+  color: #F1F6F8;
+  line-height: 1.4;
+}
+#hero #About .wrapper aside .about-info-btn {
+  margin-top: 10px;
+  float: right;
+}
+#hero #About .wrapper aside .about-info-btn a {
+  padding: 5px 15px;
+  background: linear-gradient(0deg, #262E4B, #262E4B), #404B72;
+  border-radius: 10px;
+  font-size: 0.5625rem;
+  color: #F1F6F8;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 408px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 306px) and (max-width: 360px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 260px) and (max-width: 306px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 260px) {
+  html {
+    font-size: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */

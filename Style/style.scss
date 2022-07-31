@@ -1,0 +1,322 @@
+// CSS Reset
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Import font
+// bold
+@font-face {
+    font-family: Noto-serif-bold;
+    src: url(/Portfolio/font/noto-serif/NotoSerif-Bold.ttf);
+}
+
+// Semi bold
+@font-face {
+    font-family: Noto-serif-semibold;
+    src: url(/Portfolio/font/noto-serif/NotoSerif-SemiBold.ttf);
+}
+
+// Medium
+@font-face {
+    font-family: Noto-serif-medium;
+    src: url(/Portfolio/font/noto-serif/NotoSerif-Medium.ttf);
+}
+
+// Setting colors
+$primary-color: #21273D; // Using primary color to set backgrounds 
+$secondary-color: #404B72; // Using secondary color to set backgrounds 
+$about-section-background-color: #B9D4F1; // About section background color 
+$skill-section-color: #F1F6F8; // Skill section background color 
+$skill-section-secondary-color: #C8DAE1; // Using each skill card area background color 
+$nav-bar-mobile-version-color: #2E344A; // Pop up mobile nav bar section background color 
+$primary-text-color: #F1F6F8; // Using primary text color 
+$secondary-text-color: #21273D; // Using secondary text color 
+$button-background:  linear-gradient(0deg, #262E4B, #262E4B), #404B72;// All button color
+$heading-underline-color: #839AED; // All heading under line color
+
+// Seting root size
+html {
+    font-size: 16px;
+}
+
+// Setting font-family
+body {
+    font-family: Noto-serif-medium;
+}
+
+// All 'a' tag underline removed
+a {
+    text-decoration: none;
+}
+
+// Header section start
+header {
+    width: 100%;
+    height: 88px;
+    background-color: $primary-color;
+    padding: 0 28px;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        top: 25%;
+        position: relative;
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 52px;
+                height: 44px;
+            }
+
+            h2#logo-text {
+                font-size: 1.4375rem;
+                color: $primary-text-color;
+            }
+        }
+
+        .menu-icon-div{
+            .menu-icon {
+                transform: translateY(50%);
+            }
+        }
+
+        nav {  
+            width: 9.375rem;
+            height: 100vh;
+            background-color: $nav-bar-mobile-version-color;
+            z-index: 999;
+            position: fixed;
+            top: 0;
+            right: 0;
+            transform: translateX(100%);
+
+
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                padding: 3.75rem 1.25rem;
+
+                li {
+                    color: $primary-text-color;
+                    background-color: $secondary-color;
+                    padding: 0.5rem;
+                    margin-bottom: 1rem;
+                    text-align: center;
+                    font-size: 1.1875rem;
+                    // border-bottom: 1px solid #F1F6F8;
+
+                    &:hover{
+                        background-color: $primary-color;
+                        border-bottom: 0.0625rem solid $heading-underline-color;
+                    }
+                }
+            }
+
+            .close{
+                .close-icon{
+                    float: right;
+                    margin-right: 1.5rem;
+                    margin-top: 0.9375rem;
+                }
+            }
+        }
+    }
+} // Header section end =====
+
+
+
+// Hero section start
+#hero {
+
+
+    // Home start
+    #home {
+        background-color: $secondary-color;
+
+        .wrapper {
+            padding: 0 1.75rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 193px auto;
+            grid-template-areas: "profile-picture" 
+                                 "home-info";
+            padding-top: 1.875rem;
+    
+            .home-info {
+                grid-area: home-info;
+                margin-top: 0px;
+    
+                .info-head {      
+                    color: $primary-text-color;
+                    display: inline-block;
+                    padding: 0 5px 5px 0;
+                    border-bottom: 1px solid $heading-underline-color;
+                    margin: 35px 0 0;
+
+                    h1{
+                        font-family: Noto-serif-bold;
+                        font-size: 2.125rem;
+                    }
+                }
+    
+                .home-info-paragraph {
+                    margin-top: 35px;
+                    p{
+                        font-family: noto-serif-semibold;
+                        font-size: 1.325rem;
+                        line-height: 1.8;
+                        color: $primary-text-color;
+                    }
+                }
+    
+                .home-info-btn {
+                    margin: 35px 0 56px;
+                    float: right;            
+                    width: 123px;
+                    height: 45px;
+                    background: $button-background;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 10px;
+    
+                    a {
+                        text-decoration: none;
+                        color: $primary-text-color;
+                        font-size: 1.125rem;
+                        font-family: Noto-serif-semibold;
+                    }
+                }
+            }
+    
+            aside {
+                .profile-picture {
+                    grid-area: profile-picture;
+                    margin-top: 0px;
+    
+                    img {
+                        width: 100%;
+                        height: 193px;
+                        object-fit: cover;
+                        object-position: 30%;
+                    }
+                }
+            }
+        }
+
+    }// home end
+
+
+    // About start
+    #About {
+        padding: 65px 0 65px;
+        position: relative;
+        background-color: $about-section-background-color;
+        overflow: hidden;
+
+        .side-box { // Side box is placed in about section left
+            width: 107px;
+            height: 1989px;
+            background-color: $primary-color;
+            position: absolute;
+            top: 0;
+            z-index: 0;
+        }
+
+        .wrapper{
+            padding: 0 1.75rem;
+            position: relative;
+
+            .about-image {
+               width: 15.1875rem;
+                height: 15.4375rem;
+ 
+                img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                }
+            }  
+
+            aside {
+                background-color: $secondary-color;
+                padding: 151px 27px 62px 16px;
+                margin-top: -115px;
+
+                .about-info-head {
+                    display: inline-block;
+
+                    h1 {
+                        font-family: Noto-serif-bold;
+                        font-size: 2rem;
+                        margin-top: -15px;
+                        border-bottom: 1px solid $heading-underline-color;
+                        color: $primary-text-color;
+                        padding: 0 5px 5px 0;
+                    }
+                }
+
+                .about-info-paragraph {
+                    margin-top: 20px;
+
+                    p{
+                        font-family: Noto-serif-medium;
+                        font-size: 1.0625rem;
+                        color: $primary-text-color;
+                        line-height: 1.4;
+                    }
+                }
+
+                .about-info-btn {
+                    margin-top: 10px;
+                    float: right;
+
+                    a {
+                        padding: 5px 15px;
+                        background: $button-background;
+                        border-radius: 10px;
+                        font-size: 0.5625rem;
+                        color: $primary-text-color;
+                        // margin-left: -120%;
+                    }
+                }
+            }
+        }   
+    }// About end
+
+}// hero section end
+
+
+@media only screen and (min-width: 360px) and (max-width: 408px) {
+
+    html {
+        font-size: 14px;
+    }
+}
+
+ @media only screen and (min-width: 306px) and (max-width: 360px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 260px) and (max-width: 306px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 260px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+
