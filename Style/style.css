@@ -114,7 +114,7 @@ header .wrapper nav .close .close-icon {
 }
 #hero #home .wrapper .home-info .info-head h1 {
   font-family: Noto-serif-bold;
-  font-size: 2.125rem;
+  font-size: 3.0625rem;
 }
 #hero #home .wrapper .home-info .home-info-paragraph {
   margin-top: 35px;
@@ -192,7 +192,7 @@ header .wrapper nav .close .close-icon {
 }
 #hero #About .wrapper aside .about-info-head h1 {
   font-family: Noto-serif-bold;
-  font-size: 2rem;
+  font-size: 2.625rem;
   margin-top: -15px;
   border-bottom: 1px solid #839AED;
   color: #F1F6F8;
@@ -203,7 +203,7 @@ header .wrapper nav .close .close-icon {
 }
 #hero #About .wrapper aside .about-info-paragraph p {
   font-family: Noto-serif-medium;
-  font-size: 1.0625rem;
+  font-size: 1.1875rem;
   color: #F1F6F8;
   line-height: 1.4;
 }
@@ -215,7 +215,7 @@ header .wrapper nav .close .close-icon {
   padding: 5px 15px;
   background: linear-gradient(0deg, #262E4B, #262E4B), #404B72;
   border-radius: 10px;
-  font-size: 0.5625rem;
+  font-size: 0.6875rem;
   color: #F1F6F8;
 }
 
