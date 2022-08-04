@@ -28,8 +28,9 @@
 $primary-color: #21273D; // Using primary color to set backgrounds 
 $secondary-color: #404B72; // Using secondary color to set backgrounds 
 $about-section-background-color: #B9D4F1; // About section background color 
-$skill-section-color: #F1F6F8; // Skill section background color 
-$skill-section-secondary-color: #C8DAE1; // Using each skill card area background color 
+$skill-section-background-color: #F1F6F8; // Skill section background color 
+$skill-section-secondary-background-color: #C8DAE1; // Using each skill card area background color 
+$each-skill-head-background-color: #B9D4F1; // Each skill text head background color 
 $nav-bar-mobile-version-color: #2E344A; // Pop up mobile nav bar section background color 
 $primary-text-color: #F1F6F8; // Using primary text color 
 $secondary-text-color: #21273D; // Using secondary text color 
@@ -311,7 +312,7 @@ header {
 
             .skill-info-head {
                 display: inline-block;
-                margin-left: 167px;
+                margin-left: 10.4375rem;
 
                 h1 {
                     font-family: Noto-serif-bold;
@@ -327,61 +328,60 @@ header {
                 margin-top: 29px;
 
                 .image-field {
-                    width: 312px;
-                    height: 163px;
+                    width: 19.5rem;
+                    height: 10.1875rem;
                     background-color: black;
-                    margin-left: 53px;
+                    margin-left: 3.3125rem;
                 }
  
                 // Image field and skill info text head connector line, start
                 .vertical-line {
                     width: 1px;
-                    height: 35px;
+                    height: 2.1875rem;
                     background-color: black;
                     position: absolute;
-                    left: 170px;
+                    left: 10.625rem;
                 }
                 .horizontal-line{
-                    width: 32px;
+                    width: 2rem;
                     height: 1px;
                     background-color: rgb(0, 0, 0);
                     position: absolute;
-                    left: 170px;
-                    margin-top: 35px;
+                    left: 10.625rem;
+                    margin-top: 2.1875rem;
                 }// Image field and skill info text head connector line, end
 
                 .skill-info-text{
-                    margin-top: 20px;
-                    margin-left: 174px;
+                    margin: 1.25rem 0 0 10.875rem ;
 
                     h2.skill-info-text-head{
-                        font-size: 24px;
+                        font-size: 1.5rem;
                         font-family: Noto-serif-semibold;
-                        background-color: #d09d9d;
-                        padding: 8px 25px;
+                        background-color: $each-skill-head-background-color;
+                        padding: 0.5rem 1.5625rem;
                         display: inline;
                     }
 
                     ul.skill-info-text-sub{
                         margin-top: 20px;
-                        margin-left: 41px;
-                        font-size: 18px;
+                        margin-left: 2.5625rem;
+                        font-size: 1.125rem;
                     }
 
                     .skill-level-percentage{
-                        margin-left: 129px;
-                        font-size: 19px;
+                        margin-left: 8.0625rem;
+                        font-size: 1.1875rem;
                         margin-top: 7px;
                     }
 
                     .skill-level-box {
-                        width: 168px;
-                        height: 7px;
+                        width: 10.5rem;
+                        height: 0.4375rem;
                         background-color: #B9D4F1;
 
                         .skill-level {                           
-                        width: 141px;
-                        height: 7px;
+                        width: 8.8125rem;
+                        height: 0.4375rem;
                         background-color: #6A759B;
                         border-radius: 0 5px 5px 0;
                         }
